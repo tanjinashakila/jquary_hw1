@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bgColor);
+}
+/* preloader */
+.preLoader{
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.preLoader img{
+    width: 100px;
+    height: 100px;
+}
+/* preloader ends */
+
+/* navbar */
+.navbar.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* navbar ends */
+/* FAQ */
+
+#faq_sec{
+    padding-top: 150px;
+}
+
+.faqTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #353b73;
+    color: white;
+   
+}
+.faqBody{
+    border: 1px solid whitesmoke;
+   margin-bottom: 8px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: 0.25s linear;
+}
+.faqBody p{
+    padding: 20px;
+}
+
+.faq.active .faqBody{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+.faq .faqTitle span{
+    transition: 0.3s;
+}
+.faq.active .faqTitle span{
+    transform: rotate(180deg);
+}
+
+
+
+/* FAQ ends */
+/* hide and show */
+.hide_btn{
+    margin: 50px 0;
+text-align: center;
+
+}
+.hide_btn button{
+padding: 10px 20px;
+margin-right: 20px;
+background-color:#353b73;
+}
+.hideCnt p{
+    padding: 20px 0;
+}
